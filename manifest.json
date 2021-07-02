@@ -1,0 +1,19 @@
+{
+"manifest_version" : 2,
+"name" : "Chrome Extension: Cursed Smiley",
+"version" : "1",
+"web_accessible_resources" : [
+"img/*.png"
+],
+"browser_action" : {
+"default_icon" : "img/cursedsmile.png"
+},
+"content_scripts" : [
+{
+"matches" : [
+"<all_urls>"
+],
+"js" : ["main.js"]
+}
+]
+}
